@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import { TextInput, StyleSheet } from 'react-native';
 
 class AddInput extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { text: '' };
-  }
+  state = {
+    text: ''
+  };
 
   handleChange = text => this.setState({ text })
 

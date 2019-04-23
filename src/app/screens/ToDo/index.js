@@ -12,7 +12,7 @@ import AddInput from './components/AddInput';
 import RemoveSelected from './components/RemoveSelected';
 
 class ToDo extends Component {
-  keyExtractor = (item, index) => item.id
+  keyExtractor = item => item.id
 
   renderItem = ({ item }) => {
     const { selectTodo, removeTodo } = this.props;
