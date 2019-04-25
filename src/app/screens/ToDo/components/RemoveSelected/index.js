@@ -3,8 +3,8 @@ import {
   View,
   TouchableHighlight,
   Text,
-  StyleSheet,
 } from 'react-native';
+import styles from './styles';
 
 function RemoveSelected({ removeSelectedTodos }) {
   return (
@@ -17,18 +17,5 @@ function RemoveSelected({ removeSelectedTodos }) {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  deleteContainer: {
-    borderTopWidth: 1,
-    borderTopColor: '#e8dfde',
-    height: 40,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  button: {
-    color: '#db2f29',
-  }
-});
 
 export default RemoveSelected;

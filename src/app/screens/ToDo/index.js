@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { View, FlatList, StyleSheet } from 'react-native';
+import { View, FlatList } from 'react-native';
 import {
   addTodo as addTodoAction,
   removeTodo as removeTodoAction,
@@ -10,6 +10,7 @@ import {
 import ToDoItem from './components/ToDoItem';
 import AddInput from './components/AddInput';
 import RemoveSelected from './components/RemoveSelected';
+import styles from './styles';
 
 class ToDo extends Component {
   keyExtractor = item => item.id
@@ -47,16 +48,6 @@ class ToDo extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  todoContainer: {
-    flex: 1,
-    backgroundColor: 'white',
-  },
-  listContainer: {
-    paddingHorizontal: 10
-  }
-});
 
 const mapStateToProps = state => ({
   todos: state.todos.todos,

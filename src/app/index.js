@@ -1,10 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 
-import ToDo from './screens/ToDo';
 import store from '../redux/store';
 import Title from './components/Title';
+import AppNavigator from './navigation/AppNavigator';
+import styles from './styles';
 
 const title = 'ToDo App';
 
@@ -13,15 +14,8 @@ export default function App() {
     <Provider store={store}>
       <View style={styles.container}>
         <Title title={title}/>
-        <ToDo />
+        <AppNavigator />
       </View>
     </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-});

@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
+import styles from './styles';
 
 function Title({ title }) {
   return (
@@ -8,17 +9,5 @@ function Title({ title }) {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    height: 40,
-    backgroundColor: '#87ceeb',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  titleText: {
-    color: 'white',
-  }
-});
 
 export default Title;
