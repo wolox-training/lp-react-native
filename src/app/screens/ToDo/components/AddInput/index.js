@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { TextInput, StyleSheet } from 'react-native';
+import { TextInput } from 'react-native';
+import styles from './styles';
 
 class AddInput extends Component {
   state = {
@@ -28,11 +29,5 @@ class AddInput extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  addInput: {
-    width: '100%',
-  },
-});
 
 export default AddInput;
