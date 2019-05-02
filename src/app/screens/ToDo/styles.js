@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../constants/colors';
+import { white } from '../../constants/colors';
 
 const styles = StyleSheet.create({
   todoContainer: {
     flex: 1,
-    backgroundColor: colors.white,
+    backgroundColor: white,
   },
   listContainer: {
     paddingHorizontal: 10

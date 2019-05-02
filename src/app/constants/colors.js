@@ -1,8 +1,6 @@
-export const colors = {
-  blueBackground: '#87ceeb',
-  greyBackground: '#F5FCFF',
-  white: 'white',
-  boderColor: '#e8dfde',
-  redText: '#db2f29',
-  todoItemBackground: '#eaf2f7'
-};
+export const blueBackground = '#87ceeb';
+export const greyBackground = '#F5FCFF';
+export const white = 'white';
+export const boderColor = '#e8dfde';
+export const redText = '#db2f29';
+export const todoItemBackground = '#eaf2f7';

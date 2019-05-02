@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../../../constants/colors';
+import { todoItemBackground } from '../../../../constants/colors';
 
 const styles = StyleSheet.create({
   todoItem: {
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     height: 40,
-    backgroundColor: colors.todoItemBackground,
+    backgroundColor: todoItemBackground,
     elevation: 4,
     paddingHorizontal: 8,
     borderRadius: 4,
@@ -23,3 +23,5 @@ const styles = StyleSheet.create({
     flex: 1,
   }
 });
+
+export default styles;
