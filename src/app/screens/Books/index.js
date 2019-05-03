@@ -8,9 +8,11 @@ class Books extends Component {
   keyExtractor = item => item.id.toString()
 
   renderItem = ({ item }) => {
+    const { navigation } = this.props;
     return (
       <BookItem
-        {...item}
+        navigation={navigation}
+        book={item}
       />
     );
   }

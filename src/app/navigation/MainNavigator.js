@@ -2,7 +2,8 @@ import { createMaterialTopTabNavigator, createStackNavigator } from 'react-navig
 import ToDo from '../screens/ToDo';
 import Books from '../screens/Books';
 import About from '../screens/About';
-import { colors } from '../constants/colors';
+import { blueBackground } from '../constants/colors';
+import BookDetail from '../screens/Books/screens/BookDetail';
 
 const TodoStack = createStackNavigator({
   ToDo: ToDo,
@@ -14,8 +15,16 @@ TodoStack.navigationOptions = {
   tabBarLabel: 'ToDo',
 }
 
+const ModalStack = createStackNavigator({
+  BookDetail: BookDetail
+}, {
+  mode: 'modal',
+  headerMode: 'none'
+});
+
 const BookStack = createStackNavigator({
-  Books: Books
+  Books: Books,
+  Modal: ModalStack
 }, {
   headerMode: 'none'
 });
@@ -34,6 +43,7 @@ AboutStack.navigationOptions = {
   tabBarLabel: 'About',
 }
 
+
 export default createMaterialTopTabNavigator({
   TodoStack,
   BookStack,
@@ -41,7 +51,7 @@ export default createMaterialTopTabNavigator({
 }, {
   tabBarOptions: {
     style: {
-      backgroundColor: colors.blueBackground
+      backgroundColor: blueBackground
     }
   }
 });
