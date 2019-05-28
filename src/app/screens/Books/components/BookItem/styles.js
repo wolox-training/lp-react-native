@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../../../constants/colors';
+import { boderColor } from '../../../../constants/colors';
 
 const styles = StyleSheet.create({
   booksItem: {
@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     paddingHorizontal: 10,
-    borderBottomColor: colors.boderColor,
+    borderBottomColor: boderColor,
     borderBottomWidth: StyleSheet.hairlineWidth
   },
   bookImage: {
